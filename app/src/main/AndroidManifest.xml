@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.manuni.adminmadrashaapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/Gkkmadmin"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AdminMadrashaApp"
+        tools:targetApi="m">
+        <activity android:name=".activities.DeleteAutoImageActivity" />
+        <activity android:name=".activities.AddAutoImageActivity" />
+        <activity android:name=".activities.ImageDeleteActivity" />
+        <activity android:name=".activities.DeleteImageActivity" />
+        <activity android:name=".activities.SignUpActivity">
+
+        </activity>
+        <activity android:theme="@style/noActionBar" android:name=".activities.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SplashScreenActivity">
+
+        </activity>
+        <activity android:name=".activities.DeleteNoticeActivity" />
+        <activity android:name=".activities.UpdateTeacherActivity" />
+        <activity android:name=".activities.AddTeachers" />
+        <activity android:name=".activities.UpdateFaculty" />
+        <activity android:name=".activities.UploadImage" />
+        <activity android:name=".activities.Upload_Notice" />
+        <activity android:name=".activities.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

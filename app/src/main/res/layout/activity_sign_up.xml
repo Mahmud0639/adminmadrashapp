@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/createPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/EarnWith"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/joti_one"
+            android:gravity="center"
+            android:text="@string/Gkkmadmin"
+            android:textColor="@color/red"
+            android:textSize="45sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/CreateAnAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/create_an_account1"
+            android:textColor="@color/yellow"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="@color/green">
+
+        </View>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Username"
+            android:layout_margin="@dimen/_10mdp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+       <!-- <EditText
+            android:id="@+id/nameBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/personfornew"
+            android:drawableLeft="@drawable/personfornew"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/full_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:padding="10dp" />-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Email"
+            android:layout_margin="@dimen/_10mdp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+<!--
+        <EditText
+            android:id="@+id/emailBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/emailfornew"
+            android:drawableLeft="@drawable/emailfornew"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            tools:ignore="TextFields" />-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            android:layout_margin="@dimen/_10mdp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+      <!--  <EditText
+            android:id="@+id/passwordBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/passwordfornew"
+            android:drawableLeft="@drawable/passwordfornew"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            tools:ignore="TextFields" />-->
+
+
+        <TextView
+            android:id="@+id/submitBtnId"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_2"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alreadyHaveId"
+            android:layout_width="300dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_3"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/click_to_sign_in"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
